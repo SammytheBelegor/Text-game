@@ -85,6 +85,15 @@ def battle(): #battle function with random stats
 	time.sleep(2)
 	return health
 
+def game_menu():
+	menu=input("Do you want to start a game or quit (start/quit) ").strip().lower()
+	if menu=="start":
+		time.sleep(2)
+		print()
+	elif menu=="quit":
+		quit()
+
+game_menu()
 introMon()
 
 name=input('You find a journal book and seems like your name is: ') #entering the name so that programm could speak to a player
